@@ -1,2 +1,461 @@
-<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Manual de Agendamentos, Cancelamentos e Fluxos - Sistema de Saúde</title> <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"> <style> @media print { body { font-size: 12px; } .no-print { display: none; } } .section-card { border-left: 4px solid #3B82F6; transition: all 0.3s ease; } .section-card:hover { border-left-color: #1D4ED8; transform: translateX(2px); } .contact-info { background: linear-gradient(135deg, #EBF8FF 0%, #DBEAFE 100%); } </style> </head> <body class="bg-gray-50 text-gray-800"> <div class="max-w-6xl mx-auto p-6"> <!-- Header --> <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8 rounded-lg mb-8 shadow-lg"> <div class="flex items-center mb-4"> <i class="fas fa-hospital-alt text-4xl mr-4"></i> <div> <h1 class="text-3xl font-bold">Manual de Agendamentos, Cancelamentos e Fluxos</h1> <p class="text-blue-100 text-lg mt-2">Sistema de Saúde - Procedimentos Internos</p> </div> </div> <div class="bg-blue-700 rounded p-4 mt-4"> <p class="text-sm"><i class="fas fa-users mr-2"></i><strong>Público-alvo:</strong> Pacientes, Profissionais de Saúde e Equipe Administrativa</p> </div> </div> <!-- Consultas Especializadas --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-blue-700 mb-4 flex items-center"> <i class="fas fa-user-md mr-3"></i>Cancelamento - Consulta Especializada </h2> <div class="space-y-4"> <div class="bg-blue-50 p-4 rounded-lg"> <p class="mb-3"><i class="fas fa-times-circle text-red-500 mr-2"></i><strong>Cancelamentos:</strong></p> <ul class="list-disc list-inside space-y-2 ml-4"> <li>Realizados pelo administrativo da unidade de saúde via sistema Vivver</li> <li><strong>Importante:</strong> Preservar a prioridade da guia</li> </ul> </div> <div class="bg-green-50 p-4 rounded-lg"> <p class="mb-3"><i class="fas fa-calendar-alt text-green-600 mr-2"></i><strong>Remarcações:</strong></p> <ul class="list-disc list-inside space-y-2 ml-4"> <li>Encaminhar solicitação por e-mail para a CMC com justificativa</li> <li>A CMC lançará na fila de espera</li> </ul> </div> </div> </div> <!-- Retornos --> <div class="grid md:grid-cols-2 gap-6 mb-6"> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-green-700 mb-4 flex items-center"> <i class="fas fa-redo mr-2"></i>Retornos - CCE Ressaca </h3> <ul class="space-y-2"> <li><i class="fab fa-whatsapp text-green-500 mr-2"></i>Agendamentos via WhatsApp</li> <li><i class="fas fa-desktop mr-2"></i>Para CISMEP/CCE Ressaca: inserir no sistema</li> </ul> </div> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-purple-700 mb-4 flex items-center"> <i class="fas fa-external-link-alt mr-2"></i>Médicos Fora da Rede </h3> <p><i class="fas fa-envelope mr-2"></i>Encaminhar e-mail para a Central de Marcação para inserção no sistema</p> </div> </div> <!-- Devolução de Documentos --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-orange-700 mb-4 flex items-center"> <i class="fas fa-file-export mr-3"></i>Devolução de Documentos </h2> <div class="bg-orange-50 p-4 rounded-lg"> <p><i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i><strong>Importante:</strong> O administrativo não pode devolver papéis fora do fluxo por conta própria.</p> <p class="mt-2"><i class="fas fa-arrow-right mr-2"></i>Encaminhar para o CEAPS para o órgão responsável realizar a devolutiva.</p> </div> </div> <!-- Pré-natal de Alto Risco --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-pink-700 mb-4 flex items-center"> <i class="fas fa-baby mr-3"></i>Pré-natal de Alto Risco </h2> <div class="space-y-4"> <div class="bg-pink-50 p-4 rounded-lg"> <h4 class="font-semibold mb-2 text-pink-800">Procedimento:</h4> <ol class="list-decimal list-inside space-y-2"> <li>Profissional de nível superior insere solicitação com justificativa no sistema Vivver</li> <li>Arquiva a guia na unidade</li> <li>Solicitação é regulada conforme disponibilidade de vagas</li> <li>UBS recebe relatório dos agendamentos impresso via malote</li> <li>Administrativo imprime agendamento, anexa ao pedido e entrega ao paciente</li> </ol> </div> <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400"> <p class="font-semibold text-yellow-800">Pendências:</p> <p>UBS deve verificar diariamente e solucioná-las. Somente profissionais de nível superior podem corrigir pendências.</p> </div> </div> </div> <!-- Sangramento Uterino --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-red-700 mb-4 flex items-center"> <i class="fas fa-tint mr-3"></i>Sangramento Uterino </h2> <div class="bg-red-50 p-4 rounded-lg"> <ul class="space-y-2"> <li><i class="fas fa-stethoscope mr-2"></i>Médico solicita no sistema específico</li> <li><i class="fas fa-envelope mr-2"></i>Agendamento comunicado por e-mail</li> <li><i class="fas fa-archive mr-2"></i>Enquanto não agendado, administrativo arquiva pedido e acompanha</li> </ul> </div> </div> <!-- Acupuntura --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-green-700 mb-4 flex items-center"> <i class="fas fa-leaf mr-3"></i>Acupuntura </h2> <div class="space-y-4"> <div class="bg-green-50 p-4 rounded-lg"> <h4 class="font-semibold mb-2 text-green-800">Procedimento Padrão:</h4> <ol class="list-decimal list-inside space-y-2"> <li>Profissional de nível superior insere solicitação com justificativa no sistema Vivver</li> <li>Arquiva a guia na unidade</li> <li>Solicitação é regulada conforme disponibilidade</li> <li>UBS recebe relatório via malote</li> <li>Administrativo imprime, anexa e entrega ao paciente</li> </ol> </div> <div class="bg-blue-50 p-4 rounded-lg"> <p class="font-semibold text-blue-800 mb-2">Ressalva:</p> <p>Solicitações de profissionais externos podem ser inseridas pelo administrativo, anexando a guia para regulação.</p> </div> </div> </div> <!-- Fisioterapias --> <div class="grid md:grid-cols-3 gap-6 mb-6"> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-indigo-700 mb-4 flex items-center"> <i class="fas fa-walking mr-2"></i>Fisioterapia </h3> <div class="space-y-2"> <p><i class="fas fa-desktop mr-2"></i>Agendamentos via Sistema Vivver</p> <p class="text-sm text-gray-600">Pode agendar em outros distritos com concordância do paciente</p> </div> </div> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-purple-700 mb-4 flex items-center"> <i class="fas fa-tooth mr-2"></i>Fisioterapia Buco-Maxilo </h3> <p><i class="fas fa-clinic-medical mr-2"></i>Agendamento direto para clínica Fisiovida</p> </div> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-teal-700 mb-4 flex items-center"> <i class="fas fa-venus mr-2"></i>Fisioterapia Pélvica </h3> <div class="space-y-2"> <p><i class="fas fa-paper-plane mr-2"></i>Encaminhar para setor de reabilitação</p> <p class="text-sm text-gray-600">Atendimentos no CCE Iria Diniz</p> </div> </div> </div> <!-- Infectologia Infantil --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-blue-700 mb-4 flex items-center"> <i class="fas fa-child mr-3"></i>Infectologia Infantil </h2> <div class="contact-info p-4 rounded-lg"> <p class="font-semibold mb-2">Contato para Agendamento:</p> <div class="flex flex-wrap gap-4"> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-blue-600"></i>(31) 3351-4375 </span> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-blue-600"></i>(31) 3351-6132 </span> </div> </div> </div> <!-- Mamografia --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-pink-700 mb-4 flex items-center"> <i class="fas fa-x-ray mr-3"></i>Mamografia Bilateral de Rastreamento </h2> <div class="grid md:grid-cols-2 gap-4"> <div class="bg-pink-50 p-4 rounded-lg"> <h4 class="font-semibold text-pink-800 mb-2">Critérios:</h4> <ul class="space-y-2"> <li><i class="fas fa-female mr-2"></i>Mulheres de 50 a 69 anos</li> <li><i class="fas fa-calendar mr-2"></i>Periodicidade bienal</li> <li><i class="fas fa-clock mr-2"></i>Carência: 2 anos</li> </ul> </div> <div class="bg-blue-50 p-4 rounded-lg"> <h4 class="font-semibold text-blue-800 mb-2">Faixas Etárias:</h4> <ul class="space-y-2"> <li><i class="fas fa-check mr-2"></i>51-69 anos: Mamografia</li> <li><i class="fas fa-check mr-2"></i>25-64 anos: Citologia</li> </ul> </div> </div> <div class="mt-4 p-4 bg-gray-50 rounded-lg"> <p><strong>Agendamento:</strong> Rastreamento pela unidade / Diagnóstica e risco elevado pelo CEAPS</p> </div> </div> <!-- Ultrassonografia Obstétrica --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-purple-700 mb-4 flex items-center"> <i class="fas fa-heartbeat mr-3"></i>Ultrassonografia Obstétrica </h2> <div class="bg-purple-50 p-4 rounded-lg"> <div class="grid md:grid-cols-2 gap-4"> <div> <p class="font-semibold mb-2">Critérios:</p> <ul class="space-y-2"> <li><i class="fas fa-calendar-week mr-2"></i>Após 22 semanas de gestação</li> <li><i class="fas fa-hourglass-half mr-2"></i>Carência: 3 meses</li> </ul> </div> <div> <p class="font-semibold mb-2">Observação:</p> <p class="text-sm">Até dois pedidos entre 28-32 semanas</p> </div> </div> </div> </div> <!-- Serviços Especializados --> <div class="grid md:grid-cols-2 gap-6 mb-6"> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-indigo-700 mb-4 flex items-center"> <i class="fas fa-eye mr-2"></i>Oftalmologia </h3> <div class="contact-info p-4 rounded-lg mb-4"> <div class="flex flex-wrap gap-4"> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-indigo-600"></i>3198-6761 </span> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-indigo-600"></i>3198-6762 </span> </div> </div> <ul class="space-y-2 text-sm"> <li><i class="fas fa-file-medical mr-2"></i>Administrativo coloca número do prontuário</li> <li><i class="fas fa-paper-plane mr-2"></i>Encaminha para CEAPS/Oftalmologia</li> <li><i class="fas fa-redo mr-2"></i>Cancelamentos: enviar com justificativa</li> </ul> </div> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-teal-700 mb-4 flex items-center"> <i class="fas fa-microscope mr-2"></i>Média Complexidade </h3> <div class="contact-info p-4 rounded-lg mb-4"> <div class="flex flex-wrap gap-4"> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-teal-600"></i>3198-6759 </span> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-teal-600"></i>3198-6760 </span> </div> </div> <ul class="space-y-2 text-sm"> <li><i class="fas fa-file-medical mr-2"></i>Administrativo coloca número do prontuário</li> <li><i class="fas fa-paper-plane mr-2"></i>Encaminha para CEAPS/Média Complexidade</li> <li><i class="fas fa-redo mr-2"></i>Cancelamentos: enviar com justificativa</li> </ul> </div> </div> <!-- Exames Específicos --> <div class="grid md:grid-cols-4 gap-4 mb-6"> <div class="bg-white rounded-lg p-4 shadow-md"> <h4 class="font-bold text-green-700 mb-2 flex items-center"> <i class="fas fa-volume-up mr-2"></i>Audiometria </h4> <p class="text-sm">Lançar no sistema e enviar para regulação</p> </div> <div class="bg-white rounded-lg p-4 shadow-md"> <h4 class="font-bold text-blue-700 mb-2 flex items-center"> <i class="fas fa-heartbeat mr-2"></i>ECG </h4> <p class="text-sm">Perobas/Bela Vista: Parque São João. Demais: própria unidade</p> </div> <div class="bg-white rounded-lg p-4 shadow-md"> <h4 class="font-bold text-purple-700 mb-2 flex items-center"> <i class="fas fa-brain mr-2"></i>EEG </h4> <p class="text-sm">Número do prontuário e enviar para regulação. Não lançar no sistema</p> </div> <div class="bg-white rounded-lg p-4 shadow-md"> <h4 class="font-bold text-red-700 mb-2 flex items-center"> <i class="fas fa-vial mr-2"></i>Gasometria </h4> <p class="text-sm">Laboratório realiza, mas pedido separado dos exames de sangue</p> </div> </div> <!-- Alto Custo e Reabilitação --> <div class="grid md:grid-cols-2 gap-6 mb-6"> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-red-700 mb-4 flex items-center"> <i class="fas fa-dollar-sign mr-2"></i>Alto Custo </h3> <div class="contact-info p-4 rounded-lg mb-4"> <div class="flex flex-wrap gap-4"> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-red-600"></i>3198-6752 </span> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-red-600"></i>3198-6753 </span> </div> </div> <ul class="space-y-2 text-sm"> <li><i class="fas fa-paper-plane mr-2"></i>Unidade encaminha papéis para CEAPS</li> <li><i class="fas fa-calendar mr-2"></i>Agendamentos pelo CEAPS</li> <li><i class="fas fa-envelope mr-2"></i>Comunicação via unidade de saúde</li> </ul> </div> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-xl font-bold text-cyan-700 mb-4 flex items-center"> <i class="fas fa-wheelchair mr-2"></i>Reabilitação </h3> <div class="contact-info p-4 rounded-lg mb-4"> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-cyan-600"></i>3198-6763 </span> </div> <div class="bg-cyan-50 p-4 rounded-lg"> <p class="text-sm mb-2"><i class="fas fa-envelope mr-2"></i><strong>E-mail:</strong> juntareguladora@contagem.mg.gov.br</p> <p class="text-sm">Xerox de todos os documentos em envelope separado</p> </div> </div> </div> <!-- Cirurgias --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-orange-700 mb-4 flex items-center"> <i class="fas fa-cut mr-3"></i>Cirurgia (AIH) </h2> <div class="grid md:grid-cols-2 gap-6"> <div class="contact-info p-4 rounded-lg"> <p class="font-semibold mb-2">Contatos:</p> <div class="space-y-2"> <span class="bg-white px-3 py-1 rounded-full inline-block"> <i class="fas fa-phone mr-2 text-orange-600"></i>3198-6755 </span> <span class="bg-white px-3 py-1 rounded-full inline-block"> <i class="fas fa-envelope mr-2 text-orange-600"></i>cecontagem@gmail.com </span> </div> </div> <div class="bg-orange-50 p-4 rounded-lg"> <h4 class="font-semibold mb-2">Documentos Necessários:</h4> <ul class="space-y-1 text-sm"> <li><i class="fas fa-copy mr-2"></i>Xerox de todos os documentos</li> <li><i class="fas fa-id-card mr-2"></i>Cartão SUS</li> <li><i class="fas fa-file-signature mr-2"></i>Impressos em duas vias assinados</li> </ul> </div> </div> <div class="mt-4 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400"> <p class="text-sm"><strong>Exceções:</strong> Neurocirurgia e Cardiologia - paciente pode levar direto ao CEAPS</p> </div> </div> <!-- Busca Ativa de AIH --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-indigo-700 mb-4 flex items-center"> <i class="fas fa-search mr-3"></i>Busca Ativa de AIH </h2> <div class="bg-indigo-50 p-4 rounded-lg"> <ol class="list-decimal list-inside space-y-2"> <li>Médico regulador emite guia de Referência e Contrarreferência</li> <li>Solicita reavaliação clínica e novo laudo AIH atualizado</li> <li>Agendamento pela Central de Marcação de Consultas</li> <li>Contato com usuário via telefone ou WhatsApp</li> <li>CEAPS envia guia + agendamento via malote</li> </ol> </div> <div class="mt-4 p-3 bg-gray-100 rounded text-sm"> <p><i class="fas fa-info-circle mr-2"></i>Substitui MEMO 1500/2023 e NT19-24</p> </div> </div> <!-- Procedimentos Específicos --> <div class="grid md:grid-cols-3 gap-6 mb-6"> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-lg font-bold text-blue-700 mb-3">Vasectomia e Postectomia</h3> <p class="text-sm"><i class="fas fa-phone mr-2"></i>3198-6755</p> <p class="text-sm mt-2">Necessária emissão de AIH conforme NT</p> </div> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-lg font-bold text-pink-700 mb-3">Salpingo (Laqueadura)</h3> <p class="text-sm"><i class="fas fa-phone mr-2"></i>3198-6755</p> <p class="text-sm mt-2">Pegar AIH até 36 semanas e levar ao HMC</p> </div> <div class="section-card bg-white rounded-lg p-6 shadow-md"> <h3 class="text-lg font-bold text-red-700 mb-3">Oncologia</h3> <p class="text-sm"><i class="fas fa-phone mr-2"></i>3198-6750</p> <p class="text-sm mt-2">Paciente leva direto ao CEAPS com biópsia e sumário</p> </div> </div> <!-- Cirurgia Cardiovascular --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-red-700 mb-4 flex items-center"> <i class="fas fa-heart mr-3"></i>Cirurgia Cardiovascular </h2> <div class="bg-red-50 p-4 rounded-lg"> <p class="mb-2"><i class="fas fa-phone mr-2"></i><strong>Telefone:</strong> 3198-6774</p> <p class="mb-2"><i class="fas fa-exclamation-triangle text-red-500 mr-2"></i><strong>Não disponível</strong> em BH ou Contagem (adulto/infantil)</p> <p><i class="fas fa-file-medical mr-2"></i>Necessária emissão de AIH pelo cardiologista</p> </div> </div> <!-- Exames Laboratoriais --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-green-700 mb-4 flex items-center"> <i class="fas fa-flask mr-3"></i>Exames Laboratoriais </h2> <div class="bg-green-50 p-4 rounded-lg"> <div class="grid md:grid-cols-2 gap-4"> <div> <h4 class="font-semibold mb-2">Limite de Pedidos:</h4> <p class="text-sm">Médico da unidade: até 11 pedidos sem regulação</p> </div> <div> <h4 class="font-semibold mb-2">Acima de 11 exames:</h4> <p class="text-sm">Deve ser autorizado pelo CEAPS</p> </div> </div> <div class="mt-4 p-3 bg-white rounded"> <p class="text-sm"><i class="fas fa-file-alt mr-2"></i>Verificar orientações na NT de Exames Laboratoriais</p> </div> </div> </div> <!-- Raios-X --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-gray-700 mb-4 flex items-center"> <i class="fas fa-x-ray mr-3"></i>RX (Raios-X) </h2> <div class="grid md:grid-cols-2 gap-6"> <div class="bg-red-50 p-4 rounded-lg"> <h4 class="font-semibold text-red-800 mb-2">RX de Urgência (UPA)</h4> <ul class="space-y-2 text-sm"> <li><i class="fas fa-calendar-day mr-2"></i>2 vagas por dia</li> <li><i class="fas fa-clock mr-2"></i>Pedido no mesmo dia</li> <li><i class="fas fa-lungs mr-2"></i>Apenas RX de tórax (pneumonia)</li> <li><i class="fas fa-desktop mr-2"></i>Imagens no Portal Vivace</li> </ul> </div> <div class="bg-blue-50 p-4 rounded-lg"> <h4 class="font-semibold text-blue-800 mb-2">RX Simples</h4> <ul class="space-y-2 text-sm"> <li><strong>Com laudo:</strong> CDI e CCE Iria Diniz</li> <li><strong>Sem laudo:</strong> Pode agendar na UPA</li> <li><strong>Com preparo:</strong> Enviar para CEAPS</li> </ul> </div> </div> <div class="contact-info p-4 rounded-lg mt-4"> <div class="flex flex-wrap gap-4"> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-gray-600"></i>3198-6759 </span> <span class="bg-white px-3 py-1 rounded-full"> <i class="fas fa-phone mr-2 text-gray-600"></i>3198-6760 </span> </div> </div> </div> <!-- Outros Fluxos --> <div class="section-card bg-white rounded-lg p-6 mb-6 shadow-md"> <h2 class="text-2xl font-bold text-teal-700 mb-6 flex items-center"> <i class="fas fa-route mr-3"></i>Outros Fluxos </h2> <div class="grid md:grid-cols-2 gap-6"> <div class="bg-teal-50 p-4 rounded-lg"> <h4 class="font-semibold text-teal-800 mb-2 flex items-center"> <i class="fas fa-foot-print mr-2"></i>Pé Diabético </h4> <p class="text-sm">Agendamentos diretos no sistema Vivver pela unidade básica</p> </div> <div class="bg-yellow-50 p-4 rounded-lg"> <h4 class="font-semibold text-yellow-800 mb-2 flex items-center"> <i class="fas fa-tooth mr-2"></i>Risco Cirúrgico Odontológico </h4> <p class="text-sm">Clínico da unidade realiza. Se inseguro, encaminhar ao cardiologista</p> </div> </div> <div class="mt-6 bg-purple-50 p-4 rounded-lg"> <h4 class="font-semibold text-purple-800 mb-2 flex items-center"> <i class="fas fa-search-plus mr-2"></i>Estudo Urodinâmico </h4> <p class="text-sm">Ao chegar agendamento, informar enfermeiro da equipe para verificar pacientes com sonda vesical de demora (Fley)</p> </div> </div> <!-- Footer --> <div class="bg-gradient-to-r from-gray-600 to-gray-800 text-white p-6 rounded-lg mt-8"> <div class="flex items-center justify-between"> <div> <h3 class="text-lg font-bold mb-2">Sistema de Saúde Municipal</h3> <p class="text-sm text-gray-300">Manual de Procedimentos Internos - Versão Pública</p> </div> <div class="text-right"> <p class="text-sm">Destinado a:</p> <div class="flex flex-wrap gap-2 mt-2"> <span class="bg-gray-700 px-3 py-1 rounded-full text-xs"> <i class="fas fa-users mr-1"></i>Pacientes </span> <span class="bg-gray-700 px-3 py-1 rounded-full text-xs"> <i class="fas fa-user-md mr-1"></i>Profissionais </span> <span class="bg-gray-700 px-3 py-1 rounded-full text-xs"> <i class="fas fa-clipboard mr-1"></i>Administrativo </span> </div> </div> </div> <div class="mt-4 pt-4 border-t border-gray-600 text-center"> <p class="text-xs text-gray-400"> <i class="fas fa-info-circle mr-2"></i> Este manual contém procedimentos internos e deve ser seguido rigorosamente para garantir a qualidade do atendimento </p> </div> </div> </div> </body> </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelamento - Consulta Especializada: Resumo dos Fluxos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        @media print {
+            body { print-color-adjust: exact; }
+        }
+        .section-divider {
+            border-left: 4px solid #3B82F6;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="max-w-7xl mx-auto p-6">
+        <!-- Header -->
+        <div class="bg-blue-600 text-white p-6 rounded-lg mb-8 shadow-lg">
+            <h1 class="text-3xl font-bold mb-2">
+                <i class="fas fa-calendar-check mr-3"></i>
+                Cancelamento - Consulta Especializada
+            </h1>
+            <h2 class="text-xl font-semibold">RESUMO DOS FLUXOS</h2>
+            <p class="text-blue-100 mt-2">Guia completo para marcação, cancelamentos e orientações de consultas especializadas e exames</p>
+        </div>
 
+        <!-- Consultas Especializadas -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-blue-700 border-b-2 border-blue-300 pb-2">
+                <i class="fas fa-stethoscope mr-2"></i>CONSULTAS ESPECIALIZADAS
+            </h2>
+
+            <!-- Baixa Demanda -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-green-700 bg-green-100 p-3 rounded-lg">
+                    <i class="fas fa-check-circle mr-2"></i>BAIXA DEMANDA - Agendamento Direto
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">ACUPUNTURA</h4>
+                        <p class="text-sm text-green-700">Agenda direto no sistema/Tipo de serviço Acupuntura/Em proc. escolhe a região</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">MAMOGRAFIA BILATERAL RASTREAMENTO</h4>
+                        <p class="text-sm text-green-700">Agenda direto no sistema/Aba consulta especializada<br><span class="font-semibold">Critério:</span> Mulheres 50 a 69 anos - Bienal</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">RETOSSIGMOIDOSCOPIA</h4>
+                        <p class="text-sm text-green-700">Agenda direto no sistema/Aba média complexidade</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">ULTRASSONOGRAFIA OBSTÉTRICA</h4>
+                        <p class="text-sm text-green-700">Não passa por regulação<br><span class="font-semibold">Critério:</span> Após 22 semanas de gestação</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">ULTRASSONOGRAFIA TRANSLUCÊNCIA NUCAL</h4>
+                        <p class="text-sm text-green-700">Não passa por regulação<br><span class="font-semibold">Critério:</span> 11 a 14 semanas de gestação</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">FISIOTERAPIA</h4>
+                        <p class="text-sm text-green-700">Agenda direto no sistema - clique na aba tipo de serviço e escolhe a região</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800 mb-2">INFECTOLOGIA INFANTIL</h4>
+                        <p class="text-sm text-green-700">Agendamento por telefone - ligar no CCE Iria Diniz</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alta Demanda -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-red-700 bg-red-100 p-3 rounded-lg">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>ALTA DEMANDA - Encaminhar para CEAPS/CMC
+                </h3>
+                <div class="bg-red-50 border border-red-200 p-4 rounded-lg mb-4">
+                    <p class="text-red-800 font-semibold mb-2">
+                        <i class="fas fa-info-circle mr-2"></i>Todas as especialidades abaixo devem ser encaminhadas para o CEAPS/CMC - Solicitação passa por regulação:
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">ALERGISTA</span><br>
+                        <span class="text-xs text-red-600">Adulto e Infantil</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">ANGIOLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">CARDIOLOGIA</span><br>
+                        <span class="text-xs text-red-600">Adulto e Infantil</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">CIRURGIA AMBULATORIAL</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">CIRURGIA CABEÇA E PESCOÇO</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">CIRURGIA GERAL</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">CIRURGIA INFANTIL</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">CIRURGIA PLÁSTICA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">CIRURGIA TORÁCICA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">COLOPROCTOLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">COLPOSCOPIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">DERMATOLOGIA</span><br>
+                        <span class="text-xs text-red-600">Hanseníase e Geral</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">ENDOCRINOLOGIA</span><br>
+                        <span class="text-xs text-red-600">Adulto e Infantil</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">GASTROENTEROLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">GERIATRIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">HEMATOLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">INFECTOLOGIA ADULTO</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">MASTOLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">NEFROLOGIA</span><br>
+                        <span class="text-xs text-red-600">Adulto e Infantil</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">NEUROCIRURGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">NEUROLOGIA</span><br>
+                        <span class="text-xs text-red-600">Adulto e Infantil</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">ODONTOLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">OFTALMOLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">ORTOPEDIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">OTORRINO</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">PEQUENAS CIRURGIAS UROLÓGICAS</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">PNAR</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">PNEUMOLOGIA</span><br>
+                        <span class="text-xs text-red-600">Adulto e Infantil</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">PROC. HEMATOLÓGICOS</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">REUMATOLOGIA</span>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 p-3 rounded text-center">
+                        <span class="text-red-800 font-medium">UROLOGIA</span>
+                    </div>
+                </div>
+                
+                <!-- Casos Especiais -->
+                <div class="mt-6 bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-yellow-800 mb-2">
+                        <i class="fas fa-star mr-2"></i>Casos Especiais de Alta Demanda:
+                    </h4>
+                    <ul class="space-y-2 text-yellow-800">
+                        <li><strong>CIR. VASCULAR - PÉ DIABÉTICO:</strong> Inserir a guia de angiologia e encaminhar para o CEAPS</li>
+                        <li><strong>ELETROENCEFALOGRAMA:</strong> Média complexidade - encaminhar para o CEAPS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cancelamentos -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-purple-700 border-b-2 border-purple-300 pb-2">
+                <i class="fas fa-times-circle mr-2"></i>CANCELAMENTOS
+            </h2>
+            
+            <div class="bg-purple-50 border border-purple-200 p-6 rounded-lg">
+                <h3 class="text-lg font-semibold text-purple-800 mb-4">Cancelamentos - Consultas Especializadas:</h3>
+                <div class="space-y-3 text-purple-800">
+                    <p><i class="fas fa-user-cog mr-2 text-purple-600"></i>Os cancelamentos poderão ser realizados pelo assistente administrativo da unidade saúde via sistema Vivver.</p>
+                    <p class="bg-purple-100 p-3 rounded"><i class="fas fa-exclamation-circle mr-2"></i><strong>Obs.:</strong> Manter a regulação da guia antes de cancelar.</p>
+                    <p><i class="fas fa-envelope mr-2 text-purple-600"></i>Para cancelamentos com necessidade de remarcação, encaminhar solicitação por e-mail para a Central de marcação de consultas com justificativa para o cancelamento. A CMC ficará responsável de inserir o paciente na fila de espera.</p>
+                </div>
+            </div>
+
+            <!-- Retornos -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-3">
+                        <i class="fas fa-redo mr-2"></i>Retornos CCE Ressaca:
+                    </h3>
+                    <ul class="space-y-2 text-blue-800">
+                        <li><i class="fab fa-whatsapp mr-2 text-green-500"></i>Agendamentos via WhatsApp</li>
+                        <li><i class="fas fa-desktop mr-2"></i>CISMEP/CCE Ressaca: inserir no sistema</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-orange-50 border border-orange-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-orange-800 mb-3">
+                        <i class="fas fa-external-link-alt mr-2"></i>Retornos Médicos Fora da Rede:
+                    </h3>
+                    <p class="text-orange-800">Encaminhar e-mail para a Central de Marcação de consultas inserir no sistema.</p>
+                </div>
+            </div>
+
+            <!-- Devolução de Documentos -->
+            <div class="mt-6 bg-gray-100 border border-gray-300 p-6 rounded-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                    <i class="fas fa-file-export mr-2"></i>Devolução de Documentos:
+                </h3>
+                <p class="text-gray-800">Encaminhar para o CEAPS para que o órgão responsável possa realizar a devolutiva.</p>
+            </div>
+        </div>
+
+        <!-- Procedimentos Específicos -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-indigo-700 border-b-2 border-indigo-300 pb-2">
+                <i class="fas fa-procedures mr-2"></i>PROCEDIMENTOS ESPECÍFICOS
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Pré-natal de Alto Risco -->
+                <div class="bg-pink-50 border border-pink-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-pink-800 mb-4">
+                        <i class="fas fa-baby mr-2"></i>PRÉ-NATAL DE ALTO RISCO
+                    </h3>
+                    <div class="space-y-3 text-pink-800 text-sm">
+                        <p>• Profissional de nível superior insere solicitação com justificativa no sistema Vivver</p>
+                        <p>• Arquivar guia na unidade para monitoramento</p>
+                        <p>• UBS acompanha via Sistema Vivver verificando pendências</p>
+                        <p>• UBS recebe relatório dos agendamentos via malote</p>
+                        <p>• Administrativo imprime, anexa à guia e entrega ao paciente</p>
+                        <p class="bg-pink-100 p-2 rounded">
+                            <strong>Pendências:</strong> Verificar diariamente - só profissionais de nível superior podem corrigir
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sangramento Uterino -->
+                <div class="bg-red-50 border border-red-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-red-800 mb-4">
+                        <i class="fas fa-female mr-2"></i>SANGRAMENTO UTERINO
+                    </h3>
+                    <div class="space-y-3 text-red-800 text-sm">
+                        <p>• Profissional de nível superior insere solicitação com justificativa</p>
+                        <p>• Arquivar guia na unidade para monitoramento</p>
+                        <p>• UBS acompanha via Sistema Vivver verificando pendências</p>
+                    </div>
+                </div>
+
+                <!-- Acupuntura -->
+                <div class="bg-green-50 border border-green-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-green-800 mb-4">
+                        <i class="fas fa-leaf mr-2"></i>ACUPUNTURA
+                    </h3>
+                    <div class="space-y-3 text-green-800 text-sm">
+                        <p>• Profissional de nível superior insere solicitação</p>
+                        <p>• Arquivar guia na unidade para monitoramento</p>
+                        <p>• UBS recebe relatório via malote</p>
+                        <p>• Administrativo entrega agendamento ao paciente</p>
+                        <p class="bg-green-100 p-2 rounded">
+                            <strong>Ressalva:</strong> Solicitações de profissionais externos podem ser inseridas pelo administrativo, anexando a guia para regulação
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fisioterapia -->
+                <div class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-4">
+                        <i class="fas fa-walking mr-2"></i>FISIOTERAPIA
+                    </h3>
+                    <div class="space-y-3 text-blue-800 text-sm">
+                        <p>• Agendamentos pela UBS via Sistema Vivver</p>
+                        <p>• Pode agendar para outros distritos se sem vagas</p>
+                        <p>• Paciente deve concordar com local</p>
+                        <p><strong>Buco-Maxilo:</strong> Agendar para clínica Fisiovida</p>
+                        <p><strong>Geniturinária (Pélvica):</strong> Encaminhar para setor de reabilitação - atendimentos no CCE Iria Diniz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orientações de Exames -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-teal-700 border-b-2 border-teal-300 pb-2">
+                <i class="fas fa-microscope mr-2"></i>ORIENTAÇÕES DE EXAMES
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+                <!-- Infectologia Infantil -->
+                <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-yellow-800 mb-2">INFECTOLOGIA INFANTIL</h4>
+                    <p class="text-yellow-700 text-sm mb-2">Agendamento via telefone:</p>
+                    <p class="font-mono text-yellow-800">(31) 3351-4375<br>(31) 3351-6132</p>
+                </div>
+
+                <!-- Mamografia -->
+                <div class="bg-pink-50 border border-pink-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-pink-800 mb-2">MAMOGRAFIA</h4>
+                    <div class="text-pink-700 text-sm space-y-1">
+                        <p><strong>Rastreamento:</strong> 50-69 anos (bienal)</p>
+                        <p><strong>Carência:</strong> 2 anos</p>
+                        <p><strong>Citologia:</strong> 25-64 anos</p>
+                        <p><strong>Diagnóstica:</strong> CEAPS</p>
+                    </div>
+                </div>
+
+                <!-- Ultrassonografia -->
+                <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">ULTRASSONOGRAFIA OBSTÉTRICA</h4>
+                    <div class="text-blue-700 text-sm space-y-1">
+                        <p><strong>Critério:</strong> Após 22 semanas</p>
+                        <p><strong>Carência:</strong> 3 meses</p>
+                        <p><strong>Obs:</strong> Até 2 pedidos entre 28-32 semanas</p>
+                    </div>
+                </div>
+
+                <!-- Oftalmologia -->
+                <div class="bg-purple-50 border border-purple-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-purple-800 mb-2">OFTALMOLOGIA</h4>
+                    <div class="text-purple-700 text-sm space-y-1">
+                        <p>Administrativo coloca prontuário e encaminha ao CEAPS</p>
+                        <p class="font-mono">📞 3198-6761 / 3198-6762</p>
+                    </div>
+                </div>
+
+                <!-- Média Complexidade -->
+                <div class="bg-indigo-50 border border-indigo-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-indigo-800 mb-2">MÉDIA COMPLEXIDADE</h4>
+                    <div class="text-indigo-700 text-sm space-y-1">
+                        <p>Administrativo coloca prontuário e encaminha ao CEAPS</p>
+                        <p class="font-mono">📞 3198-6759 / 3198-6760</p>
+                    </div>
+                </div>
+
+                <!-- ECG -->
+                <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">ECG</h4>
+                    <div class="text-green-700 text-sm space-y-1">
+                        <p><strong>Perobas/Bela Vista:</strong> Parque São João</p>
+                        <p><strong>Demais unidades:</strong> Própria unidade</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exames com Telefones -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-red-800 mb-2">ALTO CUSTO</h4>
+                    <p class="text-red-700 text-sm">Encaminhar papéis ao CEAPS</p>
+                    <p class="font-mono text-red-800">📞 3198-6752 / 3198-6753</p>
+                </div>
+                
+                <div class="bg-orange-50 border border-orange-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-orange-800 mb-2">REABILITAÇÃO</h4>
+                    <p class="text-orange-700 text-sm">Xerox de docs + envelope separado</p>
+                    <p class="font-mono text-orange-800">📞 3198-6763</p>
+                    <p class="text-xs text-orange-600">juntareguladora@contagem.mg.gov.br</p>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">CIRURGIA (AIH)</h4>
+                    <p class="text-gray-700 text-sm">Xerox docs + cartão SUS + 2 vias</p>
+                    <p class="font-mono text-gray-800">📞 3198-6755</p>
+                    <p class="text-xs text-gray-600">cecontagem@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outros Fluxos -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-cyan-700 border-b-2 border-cyan-300 pb-2">
+                <i class="fas fa-stream mr-2"></i>OUTROS FLUXOS
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Procedimentos Específicos -->
+                <div class="bg-cyan-50 border border-cyan-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-cyan-800 mb-3">PROCEDIMENTOS CIRÚRGICOS</h4>
+                    <div class="space-y-2 text-cyan-700 text-sm">
+                        <p><strong>VASECTOMIA/POSTECTOMIA:</strong> 📞 3198-6755</p>
+                        <p><strong>SALPINGO:</strong> AIH até 36 sem - HMC</p>
+                        <p><strong>ONCOLOGIA:</strong> 📞 3198-6750 - Direto CEAPS</p>
+                        <p><strong>CARDIOVASCULAR:</strong> 📞 3198-6774</p>
+                    </div>
+                </div>
+
+                <!-- Exames Laboratoriais -->
+                <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-emerald-800 mb-3">EXAMES LABORATORIAIS</h4>
+                    <div class="space-y-2 text-emerald-700 text-sm">
+                        <p>• Até 11 pedidos sem regulação</p>
+                        <p>• Acima de 11: autorização CEAPS</p>
+                        <p><strong>GASOMETRIA:</strong> Separar dos exames de sangue</p>
+                    </div>
+                </div>
+
+                <!-- Radiografia -->
+                <div class="bg-violet-50 border border-violet-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-violet-800 mb-3">RADIOGRAFIA</h4>
+                    <div class="space-y-2 text-violet-700 text-sm">
+                        <p><strong>RX Urgência UPA:</strong> 2 vagas/dia - mesmo dia</p>
+                        <p><strong>Com laudo:</strong> CDI/CCE Iria Diniz</p>
+                        <p><strong>Sem laudo:</strong> UPA disponível</p>
+                        <p><strong>Com preparo:</strong> CEAPS/Média Complexidade</p>
+                        <p class="font-mono">📞 3198-6759 / 3198-6760</p>
+                    </div>
+                </div>
+
+                <!-- Casos Especiais -->
+                <div class="bg-amber-50 border border-amber-200 p-4 rounded-lg">
+                    <h4 class="font-semibold text-amber-800 mb-3">CASOS ESPECIAIS</h4>
+                    <div class="space-y-2 text-amber-700 text-sm">
+                        <p><strong>PÉ DIABÉTICO:</strong> Agendamento direto no Vivver</p>
+                        <p><strong>RISCO CIRÚRGICO ODONTO:</strong> Clínico da unidade</p>
+                        <p><strong>ESTUDO URODINÂMICO:</strong> Informar enfermeiro sobre sonda Fley</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-700 text-white p-4 rounded-lg text-center">
+            <p class="text-sm">
+                <i class="fas fa-info-circle mr-2"></i>
+                Documento de referência para fluxos de marcação e cancelamento de consultas especializadas
+            </p>
+            <p class="text-xs text-gray-300 mt-2">Sistema de Saúde - Orientações Administrativas</p>
+        </div>
+    </div>
+</body>
+</html>
